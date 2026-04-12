@@ -1,23 +1,22 @@
 import React,{useEffect,useState} from "react";
+import styles from './utilitybar.module.css'
 
 
 
-const UtilityBar = async () =>{
+const UtilityBar = () =>{
 
 
     return(
         <React.Fragment>
 
 
-            <nav class="utility-bar">
+            <nav className={styles.utilityBar}>
 
-        <div class="utility-bar-content">
+        <div className={styles.utilityBarContent}>
 
-            <span>Check out our exciting new launches</span>
+            <span>Welcome to CareerPilot. Your one-stop destination for smarter job searching.</span>
     
-            <span>Get 50% Sale on Bracelets & Stones</span>
-    
-            <span>Get your favorite bracelets now</span>
+         
 
         </div>
         
@@ -25,3 +24,5 @@ const UtilityBar = async () =>{
         </React.Fragment>
     )
 }
+
+export default UtilityBar;

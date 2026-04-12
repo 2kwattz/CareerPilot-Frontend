@@ -1,0 +1,63 @@
+
+/* Utility Bar CSS */
+
+.utilityBar {
+    background-color: var(--black-primary);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.utilityBarContent {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slideNotification 6s ease-in-out infinite;
+}
+
+/* Keyframes */
+
+@keyframes marquee {
+    0% {
+        transform: translate(-100%);
+    }
+
+    to {
+        transform: translate(100%);
+    }
+}
+
+
+/* Keyframes */
+@keyframes slideNotification {
+
+    /* Start: hidden on left */
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    /* Enter */
+    20% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    /* Stay in center */
+    60% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    /* Exit to right */
+    80% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    /* Reset */
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}

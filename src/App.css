@@ -2,6 +2,7 @@
     --black-primary: #121212;
     --white-primary: #ffffff;
     --background: #f6efe7;
+    --surface: rgba(255, 255, 255, 0.72)
 }
 
 html{

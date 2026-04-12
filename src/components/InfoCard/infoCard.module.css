@@ -1,0 +1,12 @@
+.InfoCard{
+    background-color: var(--surface);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+}

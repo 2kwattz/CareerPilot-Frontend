@@ -1,0 +1,163 @@
+.carouselSection {
+    padding: 12px 60px 64px;
+}
+
+.carouselShell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideViewport {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 32px;
+    box-shadow: 0 24px 60px rgba(87, 55, 25, 0.14);
+}
+
+.track {
+    display: flex;
+    transition: transform 0.7s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: stretch;
+    background: linear-gradient(135deg, #fff8f2 0%, #f5ede4 100%);
+}
+
+.imagePanel {
+    min-height: 460px;
+    background: linear-gradient(180deg, rgba(244, 163, 116, 0.12) 0%, rgba(24, 80, 78, 0.1) 100%);
+}
+
+.slideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.contentPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 56px;
+    color: var(--black-primary);
+}
+
+.eyebrow {
+    width: fit-content;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(232, 111, 67, 0.12);
+    color: #a24925;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.description {
+    max-width: 32rem;
+    color: rgba(18, 18, 18, 0.78);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.ctaLink {
+    width: fit-content;
+    padding: 14px 24px;
+    border-radius: 999px;
+    background: var(--black-primary);
+    color: var(--white-primary);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 14px 30px rgba(18, 18, 18, 0.18);
+}
+
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--black-primary);
+    box-shadow: 0 12px 30px rgba(18, 18, 18, 0.14);
+    cursor: pointer;
+    transform: translateY(-50%);
+    font-size: 1.35rem;
+}
+
+.leftArrow {
+    left: 18px;
+}
+
+.rightArrow {
+    right: 18px;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 999px;
+    background: rgba(18, 18, 18, 0.18);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.activeIndicator {
+    width: 34px;
+    background: #e86f43;
+}
+
+@media (max-width: 900px) {
+    .carouselSection {
+        padding: 12px 20px 48px;
+    }
+
+    .slide {
+        grid-template-columns: 1fr;
+    }
+
+    .imagePanel {
+        min-height: 280px;
+    }
+
+    .contentPanel {
+        padding: 32px 24px 36px;
+    }
+
+    .arrowButton {
+        width: 44px;
+        height: 44px;
+    }
+
+    .leftArrow {
+        left: 12px;
+    }
+
+    .rightArrow {
+        right: 12px;
+    }
+}

@@ -2,7 +2,10 @@
     --black-primary: #121212;
     --white-primary: #ffffff;
     --background: #f6efe7;
-    --surface: rgba(255, 255, 255, 0.72)
+    --surface: rgba(255, 255, 255, 0.72);
+    --primary: #cc4e24;
+    --line:rgba(90, 67, 49, 0.12);
+    --teal: #0f8b8d;
 }
 
 html{

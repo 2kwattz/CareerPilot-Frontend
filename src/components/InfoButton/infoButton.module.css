@@ -1,0 +1,14 @@
+.buttonContainer {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(239, 108, 62, 0.12);
+    color: var(--primary);
+    font-size: 0.84rem;
+    font-weight: 700;
+}

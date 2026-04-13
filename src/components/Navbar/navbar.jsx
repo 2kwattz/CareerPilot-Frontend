@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import styles from './navbar.module.css';
+import { Link,useNavigate } from "react-router-dom";
 
 // Assets
 
 import Logo from '../../assets/logo.png'
 
 function Navbar() {
-  const [authOpen, setAuthOpen] = useState(null);
 
-  const isLogin = authOpen === 'login';
+    const navigate = useNavigate();
 
   return (
     <div className={styles.navbarWrapper}>
@@ -19,16 +19,17 @@ function Navbar() {
 
         <nav className={styles.navlinks}>
           <li className={styles.navlink}>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className={styles.navlink}>
-            <a href="/jobs">Jobs</a>
+            {/* <a href="/jobs">Jobs</a> */}
+            <Link to="/jobs">Jobs</Link>
           </li>
           <li className={styles.navlink}>
-            <a href="/community">Community</a>
+            <Link to="/community">Community</Link>
           </li>
           <li className={styles.navlink}>
-            <a href="/contact-us">Contact Us</a>
+           <Link to="/contactus">Contact Us</Link>
           </li>
         </nav>
 
@@ -36,7 +37,7 @@ function Navbar() {
           <button
             type="button"
             className={styles.loginBtn}
-            onClick={() => console.log("Login Pressed")}
+             onClick={() => navigate("/login")}
           >
             Login
           </button>

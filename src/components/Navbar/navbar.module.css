@@ -1,6 +1,6 @@
 .navbarWrapper {
   position: relative;
-  margin: 20px 60px;
+  padding: 20px 60px;
 }
 
 .navbarContainer {
@@ -41,9 +41,10 @@
 .navlink a {
   color: var(--black-primary);
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1.05rem;
+  font-weight: 100;
+  font-size: 1rem;
   transition: color 0.2s ease;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navlink a:hover {

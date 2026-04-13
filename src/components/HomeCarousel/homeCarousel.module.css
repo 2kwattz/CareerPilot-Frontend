@@ -26,7 +26,8 @@
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: stretch;
-    background: linear-gradient(135deg, #fff8f2 0%, #f5ede4 100%);
+    /* background: linear-gradient(135deg, #fff8f2 0%, #f5ede4 100%); */
+    background-color: var(--surface);
 }
 
 .imagePanel {

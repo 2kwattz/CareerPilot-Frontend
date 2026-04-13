@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './home.module.css'
 import UtilityBar from '../../components/utilitybar/utilitybar';
-import Navbar from '../../components/navbar/navbar';
+import Navbar from '../../components/Navbar/navbar';
 import HomeCarousel from '../../components/HomeCarousel/homeCarousel';
 import InfoCard from '../../components/InfoCard/infoCard';
 import { Helmet } from "react-helmet";

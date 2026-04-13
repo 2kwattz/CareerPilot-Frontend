@@ -1,35 +1,197 @@
-.navbarContainer{
-    background-color: rgba(255, 252, 249, 1) ;
-    border-radius: 20px;
-    margin: 20px 60px;
-    padding: 20px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
+.navbarWrapper {
+  position: relative;
+  margin: 20px 60px;
 }
 
-.logoContainer{
-    margin-left: 30px;
+.navbarContainer {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 18px 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
-.navlinks{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 28px;
-    margin-right: 30px;
-    margin-right: 40px;
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.navlinks li{
-    list-style-type: none;
+.logo {
+  height: 50px;
+  display: block;
 }
 
-.navlink a{
-    color: var(--black-primary);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.navlinks li {
+  list-style-type: none;
+}
+
+.navlink a {
+  color: var(--black-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: color 0.2s ease;
+}
+
+.navlink a:hover {
+  color: #e86f43;
+}
+
+.authActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.loginBtn,
+.registerBtn {
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.loginBtn {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--black-primary);
+  border: 1px solid rgba(92, 99, 128, 0.16);
+}
+
+.loginBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(88, 96, 130, 0.08);
+}
+
+.registerBtn {
+  background: linear-gradient(135deg, #f7a467 0%, #e86f43 100%);
+  color: white;
+  box-shadow: 0 14px 32px rgba(232, 111, 67, 0.18);
+}
+
+.registerBtn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.authPanel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 14px);
+  width: min(360px, 100%);
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(121, 130, 171, 0.12);
+  border-radius: 26px;
+  box-shadow: 0 30px 65px rgba(28, 31, 55, 0.12);
+  padding: 24px;
+  z-index: 20;
+}
+
+.authHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.authLabel {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  color: #8d92a3;
+}
+
+.authHeader h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #20232a;
+}
+
+.closeBtn {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #5b5f72;
+}
+
+.authForm {
+  display: grid;
+  gap: 14px;
+}
+
+.authInput {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(108, 117, 149, 0.18);
+  padding: 14px 16px;
+  font-size: 0.98rem;
+  color: #2e3147;
+  background: #fdfdff;
+}
+
+.authInput:focus {
+  outline: none;
+  border-color: #7b5bff;
+  box-shadow: 0 0 0 4px rgba(123, 91, 255, 0.12);
+}
+
+.submitBtn {
+  border: none;
+  border-radius: 16px;
+  padding: 13px 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f7a467 0%, #e86f43 100%);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.submitBtn:hover {
+  transform: translateY(-1px);
+  opacity: 0.97;
+}
+
+@media (max-width: 820px) {
+  .navbarWrapper {
+    margin: 18px 24px;
+  }
+
+  .navbarContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navlinks {
+    justify-content: center;
+    gap: 18px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .authActions {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .authPanel {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
 }

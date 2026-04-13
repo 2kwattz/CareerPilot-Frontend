@@ -36,48 +36,19 @@ function Navbar() {
           <button
             type="button"
             className={styles.loginBtn}
-            onClick={() => setAuthOpen(authOpen === 'login' ? null : 'login')}
+            onClick={() => console.log("Login Pressed")}
           >
             Login
           </button>
           <button
             type="button"
             className={styles.registerBtn}
-            onClick={() => setAuthOpen(authOpen === 'register' ? null : 'register')}
+            onClick={() => console.log("Login Pressed")}
           >
             Register
           </button>
         </div>
       </div>
-
-      {authOpen && (
-        <div className={styles.authPanel}>
-          <div className={styles.authHeader}>
-            <div>
-              <p className={styles.authLabel}>Welcome back</p>
-              <h3>{isLogin ? 'Quick sign in' : 'Create your account'}</h3>
-            </div>
-            <button
-              type="button"
-              className={styles.closeBtn}
-              onClick={() => setAuthOpen(null)}
-            >
-              ×
-            </button>
-          </div>
-
-          <form className={styles.authForm} onSubmit={(event) => event.preventDefault()}>
-            <input className={styles.authInput} type="email" placeholder="Email address" />
-            <input className={styles.authInput} type="password" placeholder="Password" />
-            {!isLogin && (
-              <input className={styles.authInput} type="password" placeholder="Confirm password" />
-            )}
-            <button className={styles.submitBtn} type="submit">
-              {isLogin ? 'Login' : 'Register'}
-            </button>
-          </form>
-        </div>
-      )}
     </div>
   );
 }

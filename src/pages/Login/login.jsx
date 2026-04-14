@@ -9,33 +9,33 @@ export default function Login() {
 
             <div className={styles.container}>
 
-            <Navbar></Navbar>
+                <Navbar></Navbar>
 
-            <div className={styles.loginWrapper}>
-                <div className={styles.loginWrapperLeft}>
-                    <InfoButton text={'CareerHub'}/>
+                <div className={styles.loginWrapper}>
+                    <div className={styles.loginWrapperLeft}>
+                        <InfoButton text={'CareerHub'} />
 
-                   <p className={styles.cyanText}> Welcome Back </p>
-                   <h2 className={styles.LoginHeading}>
-                    Step back into your job search with clarity and momentum.
-                   </h2>
+                        <p className={styles.cyanText}> Welcome Back </p>
+                        <h2 className={styles.LoginHeading}>
+                            Step back into your job search with clarity and momentum.
+                        </h2>
 
-                   <p>
-                    Review saved opportunities, track applications, and keep your next move organized in one polished workspace.
-                   </p>
+                        <p>
+                            Review saved opportunities, track applications, and keep your next move organized in one polished workspace.
+                        </p>
 
+                    </div>
+
+                    <div className={styles.loginWrapperRight}>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, qui.
+                    </div>
                 </div>
-
-                <div className={styles.loginWrapperRight}>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, qui.
-                </div>
-            </div>
 
             </div>
 
 
 
         </React.Fragment>
-     
+
     );
 }

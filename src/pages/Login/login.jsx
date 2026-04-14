@@ -27,7 +27,7 @@ export default function Login() {
                 </div>
 
                 <div className={styles.loginWrapperRight}>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sunt, debitis deserunt nulla ipsa maxime rerum non facilis nesciunt sed officiis quibusdam, obcaecati itaque cum exercitationem! Odit ducimus cum aut quas qui necessitatibus ipsam magnam, molestiae excepturi modi fugit tempore, cupiditate repellendus voluptates quisquam quidem porro tenetur velit. Quam, qui.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, qui.
                 </div>
             </div>
 

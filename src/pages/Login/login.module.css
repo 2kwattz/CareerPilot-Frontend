@@ -13,23 +13,26 @@
 
 .loginWrapper{
     /* border: 1px solid black; */
-    margin: 0px 60px;
+    padding: 20px 60px 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:10px;
     justify-content: space-between;
     align-items: center;
 }
 
+
 .loginWrapperLeft{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     border: 1px solid var(--line);
     background: linear-gradient(145deg, rgba(255, 247, 241, 0.94), rgba(255, 255, 255, 0.72)), radial-gradient(circle at top right, rgba(239, 108, 62, 0.16), transparent 34%);
-    padding: 40px;
+    padding: 38px 24px;
     border-radius: 40px;
+    width: 48%;
+    /* margin:20px; */
 }
 
 .cyanText{
@@ -46,6 +49,7 @@
     flex-direction: column;
     border: 1px solid var(--line);
     background: linear-gradient(145deg, rgba(255, 247, 241, 0.94), rgba(255, 255, 255, 0.72)), radial-gradient(circle at top right, rgba(239, 108, 62, 0.16), transparent 34%);
-    padding: 40px;
+    padding: 38px 24px;
     border-radius: 40px;
+    width: 48%;
 }
